@@ -7,11 +7,16 @@
 	"browser_action":
 	{
 		"default_icon": "icon.png",
+		"default_title": "Getting started with Breakify",
 		"default_popup": "popup.html"
 	},
-	"permissions": 
+		"permissions":
 	[
 		"activateTab",
-		"https://ajax.googleapis.com/"
+		"tabs",
+  	"bookmarks",
+  	"http://www.blogger.com/",
+  	"http://*.google.com/",
+  	"unlimitedStorage"
 	]
 }
