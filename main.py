@@ -5,11 +5,19 @@ import json
 import jinja2
 import os
 
-jinja_environment = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
+import logging
+
+first_string = 'Happy'
+second_string = 'Sad'
+jinja_environment = jinja2.Environment(
+    loader = jinja2.FileSystemLoader(os.path.dirname(__file__)))
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        template = jinja_environment.get_template('project.html')
+        self.response.write(template.render())
+
 
 class SecondHandler(webapp2.RequestHandler):
     def get(self):
