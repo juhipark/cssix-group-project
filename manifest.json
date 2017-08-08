@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+  "manifest_version": 2,
 
 	"name": "getting started example",
 	"description": "This extension shows a Google Image search result for the current page",
@@ -10,7 +10,11 @@
 		"default_title": "Getting started with Breakify",
 		"default_popup": "popup.html"
 	},
+<<<<<<< HEAD
+	"permissions":
+=======
 		"permissions":
+>>>>>>> 6b72a6e677ef982a6a1e2f23d85726bf176a48c1
 	[
 		"activateTab",
 		"tabs",
@@ -19,4 +23,5 @@
   	"http://*.google.com/",
   	"unlimitedStorage"
 	]
+
 }
