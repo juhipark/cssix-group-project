@@ -10,11 +10,7 @@
 		"default_title": "Getting started with Breakify",
 		"default_popup": "popup.html"
 	},
-<<<<<<< HEAD
 	"permissions":
-=======
-		"permissions":
->>>>>>> 6b72a6e677ef982a6a1e2f23d85726bf176a48c1
 	[
 		"activateTab",
 		"tabs",
