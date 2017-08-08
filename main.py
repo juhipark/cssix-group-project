@@ -6,4 +6,8 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello world!')
 
-app = webapp2.WSGIApplication([('/', MainHandler)], debug = True)
+class SecondHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write('Hello this is second page')
+
+app = webapp2.WSGIApplication([('/', MainHandler),('/second', SecondHandler)], debug = True)
